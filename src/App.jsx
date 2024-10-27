@@ -2,6 +2,7 @@ import "./App.css";
 import Members from "./Members";
 import Friends from "./Friends";
 import Counter from "./Counter";
+import Users from "./Users";
 
 function App() {
   const peoples = ["Apu", "Dipu", "Tipu", "Shipu", "Epu"];
@@ -23,7 +24,9 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-
+      <div>
+        <Users/>
+</div>
       {peoples.map((people) => (
         // <li>Name: {people}</li>
         <Members key={people} name={people}></Members>
