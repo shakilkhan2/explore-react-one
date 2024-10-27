@@ -11,6 +11,14 @@ function App() {
     { id: 4, name: "Tapan Chakma", Age: 24, Address: "Rangamati" },
   ];
 
+  const handleClick = () => {
+    alert("You clicked the button successfully")
+  };
+
+  const handleAddButton = (num) => {
+    alert(num + 10);
+  }
+
   return (
     <>
       <h1>Vite + React</h1>
@@ -19,6 +27,12 @@ function App() {
         // <li>Name: {people}</li>
         <Members key={people} name={people}></Members>
       ))}
+
+      {/* Events handler */}
+      <div>
+        <button onClick={handleClick}>Click Here</button>
+        <button onClick={() => {handleAddButton(5)}}>See Result</button>
+      </div>
 
       <h2>My Friends</h2>
       {friends.map((friend) => (
