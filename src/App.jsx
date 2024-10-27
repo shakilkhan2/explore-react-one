@@ -1,6 +1,7 @@
 import "./App.css";
 import Members from "./Members";
 import Friends from "./Friends";
+import Counter from "./Counter";
 
 function App() {
   const peoples = ["Apu", "Dipu", "Tipu", "Shipu", "Epu"];
@@ -27,7 +28,7 @@ function App() {
         // <li>Name: {people}</li>
         <Members key={people} name={people}></Members>
       ))}
-
+<Counter/>
       {/* Events handler */}
       <div>
         <button onClick={handleClick}>Click Here</button>
